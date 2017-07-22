@@ -1,0 +1,16 @@
+{
+  "name": "arrow-functions-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dragon-events.js",
+  "scripts": {
+    "start": "nodemon dragon-events.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
