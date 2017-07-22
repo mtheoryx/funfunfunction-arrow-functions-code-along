@@ -19,3 +19,13 @@ const totalDamageOnPlayer1 = dragonEvents
   .reduce(reduceToTotal);
 
 console.log('totalDamageOnPlayer1\n', totalDamageOnPlayer1);
+
+// Can we easily do the same for player 2?
+
+const totalDamageOnPlayer2 = dragonEvents
+  .filter(isAttack)
+  .filter(({target}) => target === 'player-2')
+  .map(getValue)
+  .reduce(reduceToTotal);
+
+console.log('\ntotalDamageOnPlayer2\n', totalDamageOnPlayer2);
