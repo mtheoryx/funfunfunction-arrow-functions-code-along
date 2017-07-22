@@ -7,16 +7,16 @@ const dragonEvents = [
 ];
 
 const totalDamageOnPlayer1 = dragonEvents
-  .filter(function(event) {
+  .filter(function isAttack(event) {
     return event.type === 'attack';
   })
-  .filter(function(event) {
+  .filter(function isPlayer1(event) {
     return event.target === 'player-1';
   })
-  .map(function(event) {
+  .map(function getDragonEventValue(event) {
     return event.value;
   })
-  .reduce(function(prev, value) {
+  .reduce(function sumDragonEventValues(prev, value) {
     return prev + value;
   }, 0);
 
