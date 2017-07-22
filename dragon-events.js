@@ -7,9 +7,9 @@ const dragonEvents = [
 ];
 
 const totalDamageOnPlayer1 = dragonEvents
-  .filter(event => event.type === 'attack')
-  .filter(event => event.target === 'player-1')
-  .map(event => event.value)
+  .filter(e => e.type === 'attack')
+  .filter(e => e.target === 'player-1')
+  .map(e => e.value)
   .reduce((prev, value) => prev + value);
 
 console.log('totalDamageOnPlayer1\n', totalDamageOnPlayer1);
